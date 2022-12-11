@@ -147,19 +147,19 @@ with page4:
     st.title("Input Data Model")
 
     # membuat input
-    bp = st.text_input("Blood Pressure (1-280)")
-    sg = st.text_input("Specific Gravity (1.01-1.03)")
-    al = st.text_input("Albumin (0-10)")
-    su = st.text_input("Sugar(0-10)")
-    rbc = st.text_input("Red Blood Cell (0 & 1)")
-    bu = st.text_input("Blood Urea  (1-391)")
-    sc = st.text_input("Serun Creatnine (0-76)")
-    sod = st.text_input("Sodium (1-163)")
-    pot = st.text_input("Pottasium (1-50)")
-    hemo = st.text_input("Hemoglobin (3-19)")
-    wbcc = st.text_input("White Blood Cc (1000-30000)")
-    rbcc = st.text_input("Red Blood Cc (1-10)")
-    htn = st.text_input("Hypertension (0 & 1)")
+    bp = st.text_input("Blood Pressure")
+    sg = st.text_input("Specific Gravity")
+    al = st.text_input("Albumin")
+    su = st.text_input("Sugar")
+    rbc = st.text_input("Red Blood Cell")
+    bu = st.text_input("Blood Urea")
+    sc = st.text_input("Serun Creatnine")
+    sod = st.text_input("Sodium")
+    pot = st.text_input("Pottasium")
+    hemo = st.text_input("Hemoglobin")
+    wbcc = st.text_input("White Blood Cc")
+    rbcc = st.text_input("Red Blood Cc")
+    htn = st.text_input("Hypertension")
 
     # section output
     def submit():
@@ -203,7 +203,7 @@ with page4:
     if submitted:
         st.text("Hasil prediksi ada pada halaman Prediksi")
         with page5:
-            st.write("Hasil prediksi risk rating yang di peroleh yaitu:")
+            st.write("Hasil prediksi Gagal Ginjal yang di peroleh yaitu:")
             st.text(submit())
             # st.write("akurasi data uji")
             # predAkurasi = submit()[1].score()
